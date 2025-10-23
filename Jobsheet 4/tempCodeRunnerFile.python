@@ -1,0 +1,10 @@
+import cv2, time
+
+cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+
+while True:
+    ok, frame = cap.read()
+
+    cv2.imshow("Webcam Preview", frame)
+
+    cv2.waitKey(1)
